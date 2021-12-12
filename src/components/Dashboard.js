@@ -20,9 +20,9 @@ export default function Dashboard({ code }) {
   const [searchResults, setSearchResults] = useState([]);
   const [playingTrack, setPlayingTrack] = useState();
   const [lyrics, setLyrics] = useState("");
-  const [shouldSearch, setShouldSearch] = useState(false);
+  const [shouldSearch, setShouldSearch] = useState(true);
   const [shouldShowLibrary, setShouldShowLibrary] = useState(false);
-  const [shouldShowHome, setShouldShowHome] = useState(true);
+  const [shouldShowHome, setShouldShowHome] = useState(false);
 
   function chooseTrack(track) {
     setPlayingTrack(track);
